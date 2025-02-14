@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Suite name = "Test Suite">
+	<test thread-count = '5' name ="Initial Test">
+		<classes>
+			<class name = "testcases.TrialOne"></class>
+		</classes>
+	</test>
+</Suite>
