@@ -28,7 +28,10 @@ public class HomePage {
 	
 	@FindBy (xpath = "//div[@class=\"report-heading-row\"]/div")
 	List<WebElement> reportHeadingRow; //Columns on Headers
-	
+
+	@FindBy (className = "report")
+	List<WebElement> report;
+
 	@FindBy (xpath = "//div[@class=\"report-heading\"]")
 	List<WebElement> reportHeading; //Rows for Header,filter, SPY header and Avg
 	
@@ -69,7 +72,6 @@ public class HomePage {
 	
 	public void getTableHeadersRows() {
 		General.collectMultiRows(driver, reportHeading);
-		
 	}
 	
 	public void getTableBodyRows() {

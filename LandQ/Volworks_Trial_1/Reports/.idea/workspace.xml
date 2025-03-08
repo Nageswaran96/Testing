@@ -5,12 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5622f824-a42d-46a7-a5d8-ceab14918ffa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Db.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Payoff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/TrialTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functions/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/functions/General.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SideMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/TrialOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/TrialOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/functions/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/functions/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/functions/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/functions/General.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/functions/Loop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/functions/Loop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/functions/Ratings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/functions/Ratings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/functions/ReadingDataFromExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/functions/ReadingDataFromExcel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SideMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/SideMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/TrialOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/TrialOne.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -18,9 +45,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2tM7InaL5blPNfTHQG4sX8qtaPI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,12 +57,93 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "TestNG.E:/Automation/Testing/LandQ/Volworks_Trial_1/Reports/testng.xml.executor": "Run",
+    "TestNG.TrialOne.databaseCheck.executor": "Run",
+    "TestNG.TrialOne.executor": "Run",
+    "TestNG.TrialOne.navigateToCCReport.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Automation/Testing/LandQ/Volworks_Trial_1/Reports"
+    "last_opened_file_path": "E:/Automation/Testing/LandQ/Volworks_Trial_1/Reports",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5505747",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG.TrialOne">
+    <configuration name="E:/Automation/Testing/LandQ/Volworks_Trial_1/Reports/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reports" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrialOne" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reports" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.TrialOne" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrialOne.databaseCheck" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reports" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.TrialOne" />
+      <option name="METHOD_NAME" value="databaseCheck" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrialOne.navigateToCCReport" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reports" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.TrialOne" />
+      <option name="METHOD_NAME" value="navigateToCCReport" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TrialOne" />
+        <item itemvalue="TestNG.E:/Automation/Testing/LandQ/Volworks_Trial_1/Reports/testng.xml" />
+        <item itemvalue="TestNG.TrialOne.navigateToCCReport" />
+        <item itemvalue="TestNG.TrialOne.databaseCheck" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,5 +154,16 @@
       <updated>1740150014204</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
