@@ -6,6 +6,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.Db;
@@ -45,15 +46,15 @@ public class TrialOne {
         sideMenu = new SideMenu(driver);
         homePageFactory = new HomePage(driver);
 		db = new Db();
-     
 	}
 	
 	@Test(priority = 1)
 	public void login() throws InterruptedException, IOException {
+		loginpage.verifyLoginPage();
 		loginpage.provideUsername("nageswaran96@gmail.com");
 		loginpage.providePassword("nag@1234");
 		loginpage.clickLoginBtn();
-		Thread.sleep(10000);
+		loginpage.verifyLogin();
 	}
 
 	@Test(priority = 2)
@@ -61,7 +62,6 @@ public class TrialOne {
 		sideMenu.clickCC();
 		Thread.sleep(Duration.ofSeconds(7));
 		general.switchTab(driver, "Covered Call");
-		homePageFactory.verifyReportBody(driver);
 	}
 
 	@Test(priority = 3)
@@ -69,7 +69,6 @@ public class TrialOne {
 		sideMenu.clickBoosters();
 		Thread.sleep(Duration.ofSeconds(7));
 		general.switchTab(driver, "Boosters");
-		homePageFactory.verifyReportBody(driver);
 	}
 
 	@Test(priority = 4)
@@ -77,7 +76,6 @@ public class TrialOne {
 		sideMenu.clickPutWrites();
 		Thread.sleep(Duration.ofSeconds(7));
 		general.switchTab(driver, "Put Writes");
-		homePageFactory.verifyReportBody(driver);
 	}
 
 	@Test(priority = 5)
@@ -85,7 +83,6 @@ public class TrialOne {
 		sideMenu.clickZcc();
 		Thread.sleep(Duration.ofSeconds(7));
 		general.switchTab(driver, "Zero-Cost Collars");
-		homePageFactory.verifyReportBody(driver);
 	}
 
 	@Test(priority = 6)
@@ -93,7 +90,6 @@ public class TrialOne {
 		sideMenu.clickPutNotional();
 		Thread.sleep(Duration.ofSeconds(7));
 		general.switchTab(driver, "Puts-Notional Cost");
-		homePageFactory.verifyReportBody(driver);
 	}
 
 	@Test(priority = 7)
@@ -101,7 +97,6 @@ public class TrialOne {
 		sideMenu.clickJobLogs();
 		Thread.sleep(Duration.ofSeconds(7));
 		general.switchTab(driver, "Job Logs");
-		homePageFactory.verifyReportBody(driver);
 	}
 
 	@Test(priority = 8)

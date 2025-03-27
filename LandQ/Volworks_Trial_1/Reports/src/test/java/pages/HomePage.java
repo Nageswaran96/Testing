@@ -1,5 +1,6 @@
 package pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.NoSuchElementException;
@@ -9,10 +10,20 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import functions.General;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
-	WebDriver driver;
+	static WebDriver driver;
+
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
 	General general;
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 	
 	@FindBy (xpath = "//app-dashboard[@class=\'ng-star-inserted\']" )
 	WebElement fullReport;
@@ -53,15 +64,16 @@ public class HomePage {
 	}
 	
 //	boolean isEnabledButton = ((WebElement) driver.findElement((By) reportBody)).isEnabled();
-	
-	public HomePage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
-	
+
 	@SuppressWarnings("static-access")
-	public void verifyReportBody(WebDriver driver) {
-		general.waitingForElementVisible(driver, reportBody);
+	public boolean verifyReportBody(WebDriver driver) {
+//		general.waitingForElementVisible(driver, reportBody);
+		wait.until(ExpectedConditions.visibilityOf(reportBody));
+		if (reportBody.isDisplayed()) {
+			return true;
+		} else {
+			return  false;
+		}
 	}
 	
 	

@@ -27,12 +27,18 @@ static Calendar today = Calendar.getInstance();
 		String tab;
 		for (String currentWindow: allWindows) {
 			driver.switchTo().window(currentWindow);
-			if(driver.getTitle().equals(tabName)) {
+			if (driver.getCurrentUrl().contains(tabName)) {
 				tab = driver.getTitle();
 				System.out.println("Current Tab Url " + driver.getCurrentUrl());
 				System.out.println("Current Tab Name is " + tab);
 				break;
 			}
+//			if(driver.getTitle().equals(tabName)) {
+//				tab = driver.getTitle();
+//				System.out.println("Current Tab Url " + driver.getCurrentUrl());
+//				System.out.println("Current Tab Name is " + tab);
+//				break;
+//			}
 		}
 	}
 	

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Payoff {
-    WebDriver driver;
+    static WebDriver driver;
 
     public Payoff(WebDriver driver) {
         this.driver = driver;
